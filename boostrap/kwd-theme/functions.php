@@ -39,7 +39,7 @@ add_action( 'after_setup_theme', 'kwd_setup' );
 
 
 // Create a function to register Poppins font and DM Sans font.
-function ag_fonts_url(): string {
+function kwd_fonts_url(): string {
 	$fonts_url = '';
 
 	$poppins = _x( 'on', 'Poppins font: on or off', 'azanguru' );
@@ -71,46 +71,34 @@ function ag_fonts_url(): string {
 /**
  * Enqueue theme assets.
  */
-function kwd_enqueue_scripts() {
+function kwd_enqueue_scripts(): void {
 	$theme = wp_get_theme();
 
-	wp_enqueue_style( 'opensans-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap', false );
-	wp_enqueue_style( 'manrope-google-fonts', 'https://fonts.googleapis.com/css?family=Manrope:400&display=swap', false );
-	wp_enqueue_style( 'animatecss', kwd_asset( 'css/animate.min.css' ), array(), '4.1.1' );
-	wp_enqueue_style( 'boostrap', kwd_asset( 'css/bootstrap.css' ), array(), $theme->get( 'Version' ) );
-	wp_enqueue_script( 'boostrap', kwd_asset( 'js/bootstrap.min.js' ), array(), '5.0.2' );
-	wp_enqueue_script( 'slick-slider', kwd_asset( 'resources/slick/slick.min.js' ), array(), '1.8.1' );
-	//wp_enqueue_script( 'css3-animate', kwd_asset( 'js/css3-animate-it.js' ), array(), $theme->get( 'Version' ) );
-	wp_enqueue_script( 'kwd', kwd_asset( 'js/app.js' ), array(), $theme->get( 'Version' ), true );
+	wp_enqueue_style( 'kwd-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'kwd-fonts', kwd_fonts_url(), array(), null );
+
+	wp_enqueue_style( 'kwd-aos', get_theme_file_uri( 'assets/vendors/aos/aos.css' ), array(), '2.3.1' );
+	wp_enqueue_style( 'kwd-boostrap', get_theme_file_uri( 'assets/css/bootstrap.css' ), array(), $theme->get( 'Version' ) );
+
+	wp_enqueue_script( 'kwd-aos', get_theme_file_uri( 'assets/vendors/js/aos.js' ), array(), '2.3.1' );
+	wp_enqueue_script( 'kwd-boostrap', get_theme_file_uri( 'assets/js/bootstrap.min.js' ), array(), '5.0.2' );
+	wp_enqueue_script( 'kwd-slick-slider', get_theme_file_uri( 'resources/vendors/slick/slick.min.js' ), array(), '1.8.1' );
+	wp_enqueue_script( 'kwd-script', get_theme_file_uri( 'assets/js/app.js' ), array(), $theme->get( 'Version' ), true );
 }
 
 add_action( 'wp_enqueue_scripts', 'kwd_enqueue_scripts' );
 
 /**
- * Get asset path.
- *
- * @param string  $path Path to asset.
- *
- * @return string
- */
-function kwd_asset( $path ) {
-	if ( wp_get_environment_type() === 'production' ) {
-		return get_stylesheet_directory_uri() . '/' . $path;
-	}
-
-	return add_query_arg( 'time', time(),  get_stylesheet_directory_uri() . '/' . $path );
-}
-
-/**
- * Adds option 'li_class' to 'wp_nav_menu'.
+ * Adds an option 'li_class' to 'wp_nav_menu'.
  *
  * @param string  $classes String of classes.
- * @param mixed   $item The current item.
- * @param WP_Term $args Holds the nav menu arguments.
+ * @param mixed   $item    The current item.
+ * @param WP_Term $args    Holds the nav menu arguments.
+ * @param         $depth
  *
- * @return array
+ * @return array|string
  */
-function kwd_nav_menu_add_li_class( $classes, $item, $args, $depth ) {
+function kwd_nav_menu_add_li_class( $classes, $item, $args, $depth ): array|string {
 	if ( isset( $args->li_class ) ) {
 		$classes[] = $args->li_class;
 	}
@@ -125,15 +113,15 @@ function kwd_nav_menu_add_li_class( $classes, $item, $args, $depth ) {
 add_filter( 'nav_menu_css_class', 'kwd_nav_menu_add_li_class', 10, 4 );
 
 /**
- * Adds option 'submenu_class' to 'wp_nav_menu'.
+ * Adds an option 'submenu_class' to 'wp_nav_menu'.
  *
  * @param string  $classes String of classes.
- * @param mixed   $item The current item.
- * @param WP_Term $args Holds the nav menu arguments.
+ * @param WP_Term $args    Holds the nav menu arguments.
+ * @param         $depth
  *
- * @return array
+ * @return array|string
  */
-function kwd_nav_menu_add_submenu_class( $classes, $args, $depth ) {
+function kwd_nav_menu_add_submenu_class( $classes, $args, $depth ): array|string {
 	if ( isset( $args->submenu_class ) ) {
 		$classes[] = $args->submenu_class;
 	}
