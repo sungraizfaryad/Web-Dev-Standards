@@ -11,6 +11,8 @@
 	"text_domain": "kwd",
 	"license": "MIT",
 	"scripts": {
+		"watch": "gulp",
+		"compile": "gulp compileSass"
 	},
 	"devDependencies": {
 		"autoprefixer": "^10.3.1",

@@ -38,7 +38,7 @@ The `Tailwind` folder provides starter files and documentation for themes built 
 
 7. **Image Handling**
     - Use WordPress functions (e.g., `wp_get_attachment_url()`) to include media files rather than hardcoding URLs like `/wp-content/uploads/...`.
-    - Add `alt` attributes to all `<img>` tags and follow semantic HTML standards. Validate your HTML using [W3School HTML Validator](https://www.w3schools.com/html/html_validator.asp).
+    - Add `alt` attributes to all `<img>` tags and follow semantic HTML standards. Validate your HTML using [W3School HTML Validator](https://validator.w3.org/).
     - Use `<img>` tags for images. Use background CSS images only when necessary.
 
 8. **Vendor and Custom Scripts**

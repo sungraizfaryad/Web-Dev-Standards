@@ -1,10 +1,10 @@
-@import "mixins/banner";
+@import "boostrap/mixins/banner";
 @include bsBanner(Reboot);
 
-@import "functions";
-@import "variables";
-@import "variables-dark";
-@import "maps";
-@import "mixins";
-@import "root";
-@import "reboot";
+@import "boostrap/functions";
+@import "boostrap/variables";
+@import "boostrap/variables-dark";
+@import "boostrap/maps";
+@import "boostrap/mixins";
+@import "boostrap/root";
+@import "boostrap/reboot";

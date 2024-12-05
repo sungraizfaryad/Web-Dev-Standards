@@ -1,52 +1,52 @@
-@import "mixins/banner";
+@import "boostrap/mixins/banner";
 @include bsBanner("");
 
 
 // scss-docs-start import-stack
 // Configuration
-@import "functions";
-@import "variables";
-@import "variables-dark";
-@import "maps";
-@import "mixins";
-@import "utilities";
+@import "boostrap/functions";
+@import "boostrap/variables";
+@import "boostrap/variables-dark";
+@import "boostrap/maps";
+@import "boostrap/mixins";
+@import "boostrap/utilities";
 
 // Layout & components
-@import "root";
-@import "reboot";
-@import "type";
-@import "images";
-@import "containers";
-@import "grid";
-@import "tables";
-@import "forms";
-@import "buttons";
-@import "transitions";
-@import "dropdown";
-@import "button-group";
-@import "nav";
-@import "navbar";
-@import "card";
-@import "accordion";
-@import "breadcrumb";
-@import "pagination";
-@import "badge";
-@import "alert";
-@import "progress";
-@import "list-group";
-@import "close";
-@import "toasts";
-@import "modal";
-@import "tooltip";
-@import "popover";
-@import "carousel";
-@import "spinners";
-@import "offcanvas";
-@import "placeholders";
+@import "boostrap/root";
+@import "boostrap/reboot";
+@import "boostrap/type";
+@import "boostrap/images";
+@import "boostrap/containers";
+@import "boostrap/grid";
+@import "boostrap/tables";
+@import "boostrap/forms";
+@import "boostrap/buttons";
+@import "boostrap/transitions";
+@import "boostrap/dropdown";
+@import "boostrap/button-group";
+@import "boostrap/nav";
+@import "boostrap/navbar";
+@import "boostrap/card";
+@import "boostrap/accordion";
+@import "boostrap/breadcrumb";
+@import "boostrap/pagination";
+@import "boostrap/badge";
+@import "boostrap/alert";
+@import "boostrap/progress";
+@import "boostrap/list-group";
+@import "boostrap/close";
+@import "boostrap/toasts";
+@import "boostrap/modal";
+@import "boostrap/tooltip";
+@import "boostrap/popover";
+@import "boostrap/carousel";
+@import "boostrap/spinners";
+@import "boostrap/offcanvas";
+@import "boostrap/placeholders";
 
 // Helpers
-@import "helpers";
+@import "boostrap/helpers";
 
 // Utilities
-@import "utilities/api";
+@import "boostrap/utilities/api";
 // scss-docs-end import-stack
