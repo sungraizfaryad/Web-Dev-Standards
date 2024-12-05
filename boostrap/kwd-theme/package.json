@@ -1,0 +1,23 @@
+{
+	"name": "KWD Theme",
+	"version": "1.1.0",
+	"description": "This a KWD Theme",
+	"author": "Sungraiz faryad",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sungraizfaryad"
+	},
+	"author_uri": "https://sungraizfaryad.com",
+	"text_domain": "kwd",
+	"license": "MIT",
+	"scripts": {
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.3.1",
+		"gulp": "^4.0.2",
+		"gulp-postcss": "^9.0.0",
+		"gulp-sass": "^5.0.0",
+		"sass": "^1.42.1",
+		"browser-sync": "^2.27.5"
+	}
+}

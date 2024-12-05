@@ -1,0 +1,52 @@
+article > *:not(.entry-content),
+.entry-content > * {
+  @apply mx-auto max-w-content;
+}
+
+.entry-content h1, .block-editor-block-list__layout h1 {
+  @apply text-2xl;
+}
+.entry-content h2, .block-editor-block-list__layout h2 {
+  @apply text-xl;
+}
+.entry-content h3, .block-editor-block-list__layout h3 {
+  @apply text-lg;
+}
+.entry-content p, .entry-content ul, .entry-content ol, .block-editor-block-list__layout p, .block-editor-block-list__layout ul, .block-editor-block-list__layout ol {
+  @apply mb-8;
+}
+.entry-content p a, .entry-content ul a, .entry-content ol a, .block-editor-block-list__layout p a, .block-editor-block-list__layout ul a, .block-editor-block-list__layout ol a {
+  @apply text-blue-500 underline;
+}
+.entry-content p a:hover, .entry-content ul a:hover, .entry-content ol a:hover, .block-editor-block-list__layout p a:hover, .block-editor-block-list__layout ul a:hover, .block-editor-block-list__layout ol a:hover {
+  @apply no-underline;
+}
+.entry-content ul:not(.block-editor-block-variation-picker__variations) li, .block-editor-block-list__layout ul:not(.block-editor-block-variation-picker__variations) li {
+  @apply list-disc list-inside;
+}
+.entry-content ol li, .block-editor-block-list__layout ol li {
+  @apply list-decimal list-inside;
+}
+
+.logo-hero-section-ellipse {
+  width: calc(50% - 250px);
+  height: 200%;
+  top: -125%;
+  right: 0;
+}
+
+.page-template-general-landing .main-site-header {
+  @apply absolute text-white;
+}
+
+.accordion-section-content .accordion-item {
+  box-shadow: 0px 5.408px 43.264px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-section-content .arrow-icon {
+  transform: rotate(225deg);
+}
+
+.accordion-section-content .accordion-item-trigger {
+  cursor: pointer;
+}
