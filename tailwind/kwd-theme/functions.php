@@ -23,7 +23,7 @@ function kwd_setup() {
 		)
 	);
 
-    add_theme_support( 'custom-logo' );
+	add_theme_support( 'custom-logo' );
 	add_theme_support( 'post-thumbnails' );
 
 	add_theme_support( 'align-wide' );
@@ -154,25 +154,25 @@ function kwd_widgets_init(): void {
 
 	register_sidebar(
 		array(
-		'name'          => __( 'Primary Sidebar', 'kwd' ),
-		'id'            => 'primary-sidebar',
-		'description'   => __( 'This sidebar appears in the blog posts page.', 'kwd' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div></section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2><div class="widget-content">',
-	)
+			'name'          => __( 'Primary Sidebar', 'kwd' ),
+			'id'            => 'primary-sidebar',
+			'description'   => __( 'This sidebar appears in the blog posts page.', 'kwd' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div></section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2><div class="widget-content">',
+		)
 	);
 	register_sidebar(
 		array(
-		'name'          => __( 'Footer Widgets', 'kwd' ),
-		'id'            => 'footer-widgets',
-		'description'   => __( 'This sidebar appears in the footer of each page.', 'kwd' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div></section>',
-		'before_title'  => '<h4 class="widget-title">',
-		'after_title'   => '</h4><div class="widget-content">',
-	)
+			'name'          => __( 'Footer Widgets', 'kwd' ),
+			'id'            => 'footer-widgets',
+			'description'   => __( 'This sidebar appears in the footer of each page.', 'kwd' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div></section>',
+			'before_title'  => '<h4 class="widget-title">',
+			'after_title'   => '</h4><div class="widget-content">',
+		)
 	);
 }
 
