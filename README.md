@@ -51,6 +51,47 @@ The `Tailwind` folder provides starter files and documentation for themes built 
 10. **Editor and Formatting**  
     Use modern code editors like **VS Code** or **PHPStorm** for clean, well-indented code.
 
+11. **Value Checks**
+    - Always check for the existence of a value before using it to avoid errors.
+    - Use `isset()` or `!empty()` to check if a value exists.
+    - Use `if ( function_exists() )` to check if a function exists before calling it.
+    - Use `if ( class_exists() )` to check if a class exists before using it.
+    - Use `if ( defined() )` to check if a constant is defined before using it.
+    - Use `if ( is_callable() )` to check if a function is callable before calling it.
+    - Use `if ( is_array() )` to check if a variable is an array before using it.
+    - Use `if ( is_object() )` to check if a variable is an object before using it.
+    - Use `if ( is_string() )` to check if a variable is a string before using it.
+    - Use `if ( is_numeric() )` to check if a variable is numeric before using it.
+    - Use `if ( is_int() )` to check if a variable is an integer before using it.
+    
+12. **Security**
+    - Sanitize all inputs and outputs to prevent SQL injection and XSS attacks.
+    - Use nonces to prevent CSRF attacks.
+    - Use secure coding practices to prevent vulnerabilities.
+
+13. **Performance**
+    - Minify and concatenate CSS and JS files.
+    - Optimize images for the web.
+    - Use a caching plugin like **WP Rocket** for better performance.
+    - Use a CDN for faster loading times.
+    - Use lazy loading for images and videos.
+    - Optimize database queries for better performance.
+
+14. **SEO**
+    - Use SEO-friendly URLs.
+    - Use proper heading tags (H1, H2, H3, etc.).
+    - Use meta tags for better SEO.
+    - Use schema markup for better search engine visibility.
+    - Use alt tags for images.
+    - Use a sitemap for better indexing.
+
+15. **Accessibility**
+    - Use semantic HTML tags.
+    - Use proper heading tags.
+    - Use ARIA attributes for better accessibility.
+    - Use proper color contrast for better readability.
+    - Use keyboard navigation for better accessibility.
+
 ---
 
 ### Framework-Specific Suggestions
