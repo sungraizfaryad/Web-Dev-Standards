@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "settings": {
+    "layout": {
+      "contentSize": "960px",
+      "wideSize": "1280px"
+    },
+    "color": {
+      "palette": [
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "color": "#B31882"
+        },
+        {
+          "name": "Secondary",
+          "slug": "secondary",
+          "color": "#CC1984"
+        },
+        {
+          "name": "Dark",
+          "slug": "dark",
+          "color": "#8C0077"
+        },
+        {
+          "name": "KWD Yellow",
+          "slug": "kwd-yellow",
+          "color": "#ECB000"
+        },
+        {
+          "name": "KWD Dark Yellow",
+          "slug": "kwd-dark-yellow",
+          "color": "#AC8104"
+        },
+        {
+          "name": "KWD Yellow Two",
+          "slug": "kwd-yellow-two",
+          "color": "#F9AE02"
+        },
+        {
+          "name": "KWD Red",
+          "slug": "kwd-red",
+          "color": "#F41985"
+        },
+        {
+          "name": "KWD Green",
+          "slug": "kwd-green",
+          "color": "#01C1AF"
+        },
+        {
+          "name": "KWD Gray",
+          "slug": "kwd-gray",
+          "color": "#7E7E7E"
+        },
+        {
+          "name": "KWD Gray Two",
+          "slug": "kwd-gray-two",
+          "color": "#7d7d7d"
+        },
+        {
+          "name": "KWD Gray Three",
+          "slug": "kwd-gray-three",
+          "color": "#F8F8F8"
+        },
+        {
+          "name": "KWD Dark Purple",
+          "slug": "kwd-dark-purple",
+          "color": "#8D0078"
+        },
+        {
+          "name": "KWD Blue",
+          "slug": "kwd-blue",
+          "color": "#3B69C3"
+        }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "name": "Small",
+          "slug": "small",
+          "size": "0.875rem"
+        },
+        {
+          "slug": "regular",
+          "name": "Regular",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "large",
+          "name": "Large",
+          "size": "1.125rem"
+        },
+        {
+          "slug": "xl",
+          "name": "XL",
+          "size": "1.25rem"
+        },
+        {
+          "slug": "xxl",
+          "name": "2XL",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "xxxl",
+          "name": "3XL",
+          "size": "1.875rem"
+        },
+        {
+          "slug": "kwd-head-1",
+          "name": "KWD Heading Font 1",
+          "size": "2.5625rem"
+        },
+        {
+          "slug": "kwd-head-2",
+          "name": "KWD Heading Font 2",
+          "size": "2.8125rem"
+        }
+      ]
+    }
+  }
+}
