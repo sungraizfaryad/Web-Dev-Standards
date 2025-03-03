@@ -94,6 +94,40 @@ The `Tailwind` folder provides starter files and documentation for themes built 
 
 ---
 
+## WooCommerce Best Practices for Theme Development
+
+This guide outlines best practices for integrating and customizing WooCommerce in a WordPress theme while maintaining compatibility and upgradability.
+
+## Template Overrides
+
+WooCommerce templates can be customized by copying them to your theme’s `woocommerce` folder and modifying them as needed.
+
+### Steps to Override Templates:
+1. **Locate the Template**  
+   Find the template file inside the `woocommerce/templates` directory.
+
+2. **Copy the Template**  
+   Copy the template file to your theme inside the `woocommerce` folder.  
+   Example:
+   ```sh
+   wp-content/themes/your-theme/woocommerce/cart/cart.php
+    ```
+3. **Modify the Template**
+4. **Update the Template**  
+   Ensure that the template file is updated when WooCommerce updates are released.
+5. **Use Hooks**  
+   Whenever possible, use hooks to modify the template instead of overriding it.
+6. **Use Child Themes**  
+   If you are using a child theme, place the template files in the child theme’s `woocommerce` folder.
+7. **Use Conditional Tags**  
+   Use conditional tags to check if WooCommerce is active before modifying templates.
+8. **Use Hooks and Filters**  
+   Use WooCommerce hooks and filters to modify the output instead of directly modifying the template files.
+9. **Use Custom Hooks**  
+   Create custom hooks in your theme to allow for easier customization of WooCommerce templates.
+10. **Use Custom Functions**  
+    Create custom functions in your theme to modify WooCommerce templates.
+
 ### Framework-Specific Suggestions
 
 #### Bootstrap
