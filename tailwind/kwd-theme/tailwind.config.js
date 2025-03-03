@@ -14,14 +14,6 @@ module.exports = {
     theme: {
         fontFamily: {
             poppins: ['Poppins', 'sans-serif'],
-            'dm-sans': ['DM Sans', 'sans-serif'],
-        },
-        container: {
-            padding: {
-                DEFAULT: '1rem',
-                sm: '2rem',
-                lg: '0rem',
-            },
         },
         extend: {
             colors: tailpress.colorMapper(
@@ -31,7 +23,14 @@ module.exports = {
                 tailpress.theme('settings.typography.fontSizes', theme),
             ),
             fontFamily: {
-                sans: ['DM Sans', 'sans-serif'],
+                poppins: ['Poppins', 'sans-serif'],
+            },
+            boxShadow: {
+                kwd: '5px 5px 0px 0px rgba(172, 129, 4, 1)',
+                'kwd-green': '5px 5px 0px 0px rgba(0, 117, 106, 1)',
+                'kwd-red': '5px 5px 0px 0px rgba(190, 13, 100, 1)',
+                'kwd-purple': '5px 5px 0px 0px rgba(70, 5, 60, 1)',
+                'kwd-blue': '5px 5px 0px 0px rgba(25, 52, 105, 1)',
             },
         },
         screens: {
