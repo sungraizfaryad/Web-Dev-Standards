@@ -17,7 +17,6 @@ mix.webpackConfig({
 mix.js('resources/js/app.js', 'assets/js');
 
 mix.postCss("resources/css/app.css", "assets/css");
-mix.postCss("resources/css/homepage.css", "assets/css");
 mix.postCss("resources/css/kwd-woo-styles.css", "assets/css");
 
 
